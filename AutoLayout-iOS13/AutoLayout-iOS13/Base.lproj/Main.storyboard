@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,19 +20,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2c1-Jl-5o8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PJD-nG-lF7">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PJD-nG-lF7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqb-op-0bI" userLabel="Top View">
-                                        <rect key="frame" x="0.5" y="0.0" width="413" height="272"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fob-ve-FIA">
-                                                <rect key="frame" x="108.5" y="72" width="196" height="128"/>
+                                                <rect key="frame" x="109" y="72" width="196" height="128"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="fob-ve-FIA" firstAttribute="centerY" secondItem="Dqb-op-0bI" secondAttribute="centerY" id="CGr-n4-JXt"/>
-                                            <constraint firstItem="fob-ve-FIA" firstAttribute="centerX" secondItem="Dqb-op-0bI" secondAttribute="centerX" id="o78-Jn-miu"/>
+                                            <constraint firstItem="fob-ve-FIA" firstAttribute="centerX" secondItem="Dqb-op-0bI" secondAttribute="centerX" id="MBd-uU-vzY"/>
+                                            <constraint firstItem="fob-ve-FIA" firstAttribute="centerY" secondItem="Dqb-op-0bI" secondAttribute="centerY" id="RSY-8C-1Ux"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoT-n2-RwH" userLabel="Middle view">
@@ -51,8 +51,8 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="5KQ-ag-Uzh" firstAttribute="centerX" secondItem="qoT-n2-RwH" secondAttribute="centerX" id="T5W-zl-0H7"/>
-                                            <constraint firstItem="5KQ-ag-Uzh" firstAttribute="centerY" secondItem="qoT-n2-RwH" secondAttribute="centerY" id="UKf-1I-Rv8"/>
+                                            <constraint firstItem="5KQ-ag-Uzh" firstAttribute="centerX" secondItem="qoT-n2-RwH" secondAttribute="centerX" id="1IB-E0-Nyp"/>
+                                            <constraint firstItem="5KQ-ag-Uzh" firstAttribute="centerY" secondItem="qoT-n2-RwH" secondAttribute="centerY" id="i70-lL-CO2"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbw-2X-g8Q" userLabel="Bottom view">
@@ -75,8 +75,10 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerY" secondItem="bbw-2X-g8Q" secondAttribute="centerY" id="QlF-Dv-joU"/>
                                             <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerX" secondItem="bbw-2X-g8Q" secondAttribute="centerX" id="YSd-dh-Ft2"/>
                                             <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerY" secondItem="bbw-2X-g8Q" secondAttribute="centerY" id="Z3c-Mt-olL"/>
+                                            <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerX" secondItem="bbw-2X-g8Q" secondAttribute="centerX" id="sIT-G4-UVy"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -85,14 +87,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PJD-nG-lF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="05n-JX-tFX"/>
                             <constraint firstAttribute="bottom" secondItem="2c1-Jl-5o8" secondAttribute="bottom" id="189-Uo-lCn"/>
+                            <constraint firstAttribute="trailing" secondItem="2c1-Jl-5o8" secondAttribute="trailing" id="5js-Yk-YJ3"/>
+                            <constraint firstItem="PJD-nG-lF7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6Sa-Uy-cbU"/>
+                            <constraint firstAttribute="bottom" secondItem="2c1-Jl-5o8" secondAttribute="bottom" id="8Vd-f9-ldF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PJD-nG-lF7" secondAttribute="bottom" id="Et9-FI-3wP"/>
                             <constraint firstItem="2c1-Jl-5o8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FpI-5l-BAX"/>
                             <constraint firstItem="PJD-nG-lF7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Guu-9f-YQL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PJD-nG-lF7" secondAttribute="trailing" id="SKu-A9-ggG"/>
                             <constraint firstItem="2c1-Jl-5o8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VJm-eO-qJA"/>
+                            <constraint firstItem="PJD-nG-lF7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ed8-Ua-7On"/>
                             <constraint firstItem="PJD-nG-lF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nfN-6W-DaA"/>
+                            <constraint firstItem="2c1-Jl-5o8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="o5H-T9-7KX"/>
+                            <constraint firstItem="PJD-nG-lF7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="odB-ik-Bre"/>
                             <constraint firstItem="2c1-Jl-5o8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="y4R-h1-LAi"/>
+                            <constraint firstItem="2c1-Jl-5o8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yim-pU-hUI"/>
                         </constraints>
                     </view>
                     <connections>
